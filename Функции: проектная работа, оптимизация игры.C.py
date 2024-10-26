@@ -11,7 +11,7 @@ def dice(ta=True):
    tb=random.randint(1,6)
    tc+=tb
    print("Кубик "+str(tq+1)+": "+str(tb))
-   print("Суммарный результат: "+str(tc))
+  print("Суммарный результат: "+str(tc))
  else: 
   print("Нельзя бросить столько кубиков, попробуйте снова")
 #  dice(ta)
