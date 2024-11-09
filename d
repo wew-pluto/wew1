@@ -1,5 +1,8 @@
 a=input()
-b=''
-for tq in range((len(a)-3)//2):
- b+=a[tq*2]
-print(b)
+b=input()
+if max(len(a),len(b),6)==len(a):
+ print(a)
+elif len(b)<6:
+ print('Albert')
+else:
+ print(b)
