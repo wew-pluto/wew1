@@ -1,0 +1,14 @@
+a=input()
+b=''
+for q in range(len(a)):
+ c=a[q]
+ try :
+  int(c)
+ except ValueError:
+  if c!='?' and c!='!' and c!=',' and c!=':' and c!=';' and c!='_' and c!='.':
+   b+=chr(ord(c)+32)
+  else:
+   b+=c
+ else:
+  b+=c
+print(b)
