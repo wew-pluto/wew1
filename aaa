@@ -1,0 +1,8 @@
+a=input()
+b=''
+for q in range(len(a)):
+ if a[q]=='.':
+  b+='?'
+ else:
+  b+=a[q]
+print(b)
