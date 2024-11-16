@@ -1,8 +1,1 @@
-a=input()
-b=''
-for q in range(len(a)):
- if a[q]=='.':
-  b+='?'
- else:
-  b+=a[q]
-print(b)
+print(input().lower().strip(' ').replace("ну ",'').replace("типо ",'').replace("как бы ",''))
