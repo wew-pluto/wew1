@@ -1,1 +1,18 @@
-print(input().lower().strip(' ').replace("ну ",'').replace("типо ",'').replace("как бы ",''))
+a=input()
+if len(a)==11:
+ try:
+  int(a)
+ except ValueError:
+  print("некорректно заполнено")
+ else:
+  print("все верно")
+else:
+  if len(a)==12:
+   try:
+    int(a[1:])
+   except ValueError:
+    print("некорректно заполнено")
+   else:
+    print("все верно")
+  else:
+   print("некорректно заполнено")
