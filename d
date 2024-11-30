@@ -1,8 +1,4 @@
-a=input()
-b=input()
-if max(len(a),len(b),6)==len(a):
- print(a)
-elif len(b)<6:
- print('Albert')
-else:
- print(b)
+from urllib import request
+print(request.urlopen("http://158.160.6.201/api/weather/temp.php").read().decode())
+print(request.urlopen("http://158.160.6.201/api/weather/wind.php").read().decode())
+print(request.urlopen("http://158.160.6.201/api/weather/humidity.php").read().decode())
