@@ -1,0 +1,5 @@
+input_=input()
+thing=chr(ord(input_[2])+3)
+eins=input_.find(thing)
+minus_eins=input_.rfind(thing)
+print(input_[eins+1:minus_eins])
