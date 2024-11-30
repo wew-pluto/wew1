@@ -1,18 +1,3 @@
-a=input()
-if len(a)==11:
- try:
-  int(a)
- except ValueError:
-  print("некорректно заполнено")
- else:
-  print("все верно")
-else:
-  if len(a)==12:
-   try:
-    int(a[1:])
-   except ValueError:
-    print("некорректно заполнено")
-   else:
-    print("все верно")
-  else:
-   print("некорректно заполнено")
+from urllib import request
+a=request.urlopen("http://158.160.6.201/api/getiptext.php")
+print(a.read().decode())
