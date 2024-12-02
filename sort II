@@ -1,0 +1,41 @@
+def LsearchII(searchII_L,searchII_R1,searchII_arr,searchII_X):
+ searchII_R=searchII_R1
+ while searchII_R-searchII_L>1:
+  searchII_mid=(searchII_R+searchII_L)//2
+  if searchII_arr[searchII_mid]<searchII_X:
+   searchII_L=searchII_mid
+  else:
+   searchII_R=searchII_mid
+ try:
+  searchII_arr[searchII_R]
+ except IndexError:
+  if searchII_arr[searchII_R1-1]==searchII_X:
+   return(searchII_R1-1)
+  else:
+   return('False1')
+ else:
+  if searchII_arr[searchII_R]!=searchII_X:
+   return('False1')
+  else:
+   return(searchII_R)
+
+def RsearchII(searchII_L,searchII_R1,searchII_arr,searchII_X):
+ searchII_R=searchII_R1
+ while searchII_R-searchII_L>1:
+  searchII_mid=(searchII_R+searchII_L)//2
+  if searchII_arr[searchII_mid]>searchII_X:
+   searchII_R=searchII_mid
+  else:
+   searchII_L=searchII_mid
+ try:
+  searchII_arr[searchII_R]
+ except IndexError:
+  if searchII_arr[searchII_R1-1]==searchII_X:
+   return(searchII_R1-1)
+  else:
+   return('False1')
+ else:
+  if searchII_arr[searchII_R]!=searchII_X:
+   return('False1')
+  else:
+   return(searchII_R)
